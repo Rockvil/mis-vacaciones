@@ -1,0 +1,10 @@
+# Copias de seguridad personales
+*.json
+
+# Archivos locales
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.log
