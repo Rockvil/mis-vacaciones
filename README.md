@@ -8,7 +8,7 @@ Abre `index.html` en un navegador moderno o accede a la web publicada con GitHub
 
 - Configura tus bolsas de tiempo y sus saldos por año.
 - Registra días completos, medios días u horas.
-- Añade festivos manualmente y excluye fines de semana y festivos al planificar.
+- Incluye los festivos oficiales de Cataluña de 2026 y 2027 (excepto Aran), permite añadir festivos locales y excluye fines de semana y festivos al planificar.
 - Guarda y recupera copias en formato JSON.
 
 ## Datos y copias de seguridad
@@ -33,12 +33,18 @@ No subas tus copias JSON al repositorio. La web publicada y, si eliges un reposi
 5. Selecciona **main** y **/ (root)** y pulsa **Save**.
 6. Espera al despliegue y abre la dirección que aparece en esa sección.
 
-La dirección habitual será `https://TU-USUARIO.github.io/mis-vacaciones/`. Los cambios que subas a `main` se publicarán automáticamente.
+La dirección habitual será `https://rockvil.github.io/mis-vacaciones/`. Los cambios que subas a `main` se publicarán automáticamente.
 
 Documentación oficial: [Crear un sitio de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 
 ## Archivos
 
-- `index.html`: aplicación original, sin cambios funcionales.
+- `index.html`: aplicación con festivos oficiales integrados.
 - `.nojekyll`: indica que se publique como sitio estático sin procesar con Jekyll.
 - `.gitignore`: excluye copias personales y archivos locales habituales.
+
+## Festivos oficiales
+
+Los calendarios oficiales se muestran automáticamente, también al recuperar una copia anterior, sin modificar las ausencias ni los saldos guardados. Los festivos oficiales se conservan al borrar intervalos. Los años sin calendario precargado muestran un aviso. Los dos festivos locales se añaden manualmente. El calendario de Aran tiene sustituciones propias y no está incluido.
+
+Fuentes: [Generalitat 2026](https://treball.gencat.cat/ca/ambits/relacions_laborals/ci/calendari_laboral/calendari-festes-2026/) y [Generalitat 2027](https://treball.gencat.cat/ca/ambits/relacions_laborals/ci/calendari_laboral/calendari-festes-2027/).
